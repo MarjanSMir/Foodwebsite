@@ -1,3 +1,4 @@
+/* menu */
 document.querySelector(".menu").addEventListener('click', () => {
     let icon = document.getElementsByClassName('icon');
     let link = document.getElementsByClassName('link');
@@ -21,3 +22,20 @@ document.querySelector(".menu").addEventListener('click', () => {
         }
     }
 })
+
+/* sevtion 1 */
+const icons = document.querySelectorAll('.icon-container i')
+let i = 1;
+
+setInterval(() => {
+	i++;
+	const icon = document.querySelector('.icon-container .change');
+	icon.classList.remove('change');
+
+	if (i > icons.length) {
+		icons[0].classList.add('change');
+		i = 1;
+	} else {
+		icon.nextElementSibling.classList.add('change');
+	}
+}, 1500)
