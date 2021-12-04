@@ -8,12 +8,11 @@
 .header,
 nav,
 ul,
-li {
+li, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
 }
 
 nav {
@@ -238,7 +237,7 @@ li:hover>.link {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: rgb(248, 205, 205);
 }
 
@@ -297,6 +296,10 @@ li:hover>.link {
     width: 2px;
     height: 175px;
 }
+.food-title:hover h4{
+    width: 100%;
+    transition: width 2s;
+}
 
 .para-1 {
     margin-top: 15%;
@@ -323,13 +326,87 @@ li:hover>.link {
     left: 95%;
     transition: 1s;
 }
+.para-1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-h4 {
+h4{
+    width: 0%;
     font-weight: bolder;
     position: absolute;
     top: 5%;
     left: 10%;
     color: white;
     font-size: 25px;
+    transition: width 1s;
+    overflow: hidden;
+    letter-spacing: 0.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(223, 115, 115);
+}
+.footer-title, .footer-input{
+    width: 50%;
+    height: 100px;
+    
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.footer-title h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(252, 222, 222);
+    
+}
+.footer-title span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+form .email-input{
+    width: 50%;
+    height: 50px;
+    color: rgba(154, 69, 233, 0.822);
+    font-weight: bold;
+    ont-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    padding-left: 3px;
+}
+form .btn{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(154, 69, 233, 0.822);
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50% , -40%);
+    
+}
+
 
