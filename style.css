@@ -10,17 +10,24 @@
 .header,
 nav,
 ul,
-li, .footer, .card-container, .gallery,
-form{
+li,
+.footer,
+.card-container,
+.gallery,
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-li, .pm, .card, .sgallery,
-.gallery figure, .footer-title{
-display: flex;
+li,
+.pm,
+.card,
+.sgallery,
+.gallery figure,
+.footer-title {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -36,7 +43,7 @@ nav {
     transition: 1s;
 }
 
-li{
+li {
     width: 150px;
     height: 100px;
     list-style: none;
@@ -49,7 +56,7 @@ li{
     text-decoration: none;
     padding-left: 10px;
     transition: 2s;
-    
+
 }
 
 .link {
@@ -273,7 +280,7 @@ li:hover>.link {
     height: 175px;
 }
 
-.food-title:hover h4{
+.food-title:hover h4 {
     width: 100%;
     transition: width 2s;
 }
@@ -305,7 +312,7 @@ li:hover>.link {
 }
 
 
-h4{
+h4 {
     width: 0%;
     font-weight: bolder;
     position: absolute;
@@ -319,37 +326,41 @@ h4{
 }
 
 /*Footer*/
-.footer{
+.footer {
     width: 100%;
     height: 100px;
     background-color: rgb(223, 115, 115);
 }
-.footer-title, .footer-input{
+
+.footer-title,
+.footer-input {
     width: 50%;
     height: 100px;
-    
-}
-.footer-title{
-    text-transform: uppercase;
-}
-.footer-title h3{
-    font-size: 40px;
-    font-weight: bold;
-    color:rgb(252, 222, 222); 
+
 }
 
-.footer-title span{
+.footer-title {
+    text-transform: uppercase;
+}
+
+.footer-title h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(252, 222, 222);
+}
+
+.footer-title span {
     font-weight: bold;
     font-size: 15px;
 }
 
-form{
+form {
     width: 50%;
     height: auto;
     position: relative;
 }
 
-form .email-input{
+form .email-input {
     width: 50%;
     height: 50px;
     color: rgba(154, 69, 233, 0.822);
@@ -360,7 +371,7 @@ form .email-input{
     padding-left: 3px;
 }
 
-form .btn{
+form .btn {
     width: 30px;
     height: 30px;
     background-color: rgba(154, 69, 233, 0.822);
@@ -373,7 +384,72 @@ form .btn{
     position: absolute;
     top: 45%;
     left: 70%;
-    transform: translate(-50% , -40%);  
+    transform: translate(-50%, -40%);
 }
 
 /* Responsive */
+@media screen and (max-width:767px) {
+    html {
+        font-size: 40%;
+        overflow-x: hidden;
+    }
+
+    /*menu*/
+    li {
+        width: 10px;
+        margin: 0;
+        padding: 45px;
+    }
+
+    .link {
+        font-size: 20px;
+        padding-left: 10px;
+        letter-spacing: 1px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    /*second part*/
+    .h1 {
+        font-size: 10rem;
+        text-align: center;
+    }
+
+    .icon-2 {
+        font-size: 16rem;
+    }
+
+    /*third part */
+    .card-container {
+        flex-direction: column;
+
+    }
+
+    .pm {
+        height: auto;
+    }
+
+    .card img {
+        transform: scale(0.8);
+    }
+
+    .card-header {
+        margin-top: -40px;
+    }
+
+    .card-btn {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    /*Forth part */
+  
+
+
+
+
+
+
+
+}
